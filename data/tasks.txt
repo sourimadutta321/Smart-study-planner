@@ -1,0 +1,6 @@
+8f2b-11ed-a1,Calculus Homework,Math,2026-04-05,HIGH,3.0,false
+9a3c-22fe-b2,History Essay,History,2026-04-10,MEDIUM,5.0,false
+7d1e-33ba-c3,Physics Lab Report,Science,2026-04-05,MEDIUM,2.0,false
+4c9a-44dc-d4,Java Project UI,CompSci,2026-04-02,HIGH,4.0,false
+2b8e-55fe-e5,Read Chapter 1,English,2026-04-15,LOW,1.5,true
+323c1704-4519-4683-9421-a73b7ca6c362,English Read,English,2026-04-05,LOW,2.0,false
