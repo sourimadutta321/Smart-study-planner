@@ -49,9 +49,8 @@ Running the App
     Click the Run button above the main method
 
 ## 🖥️ Example Usage
-╔════════════════════════════════════════╗
-║        📚  SMART STUDY PLANNER         ║
-╚════════════════════════════════════════╝
+
+  📚  SMART STUDY PLANNER         
 
   1. Add Task
   2. Generate Smart Schedule
