@@ -6,14 +6,14 @@ A Java-based console application that helps students manage study tasks intellig
 Students often struggle with managing multiple subjects, overlapping deadlines, and varying task priorities. The Smart Study Planner solves this by automatically generating a day-wise study schedule using a priority scheduling algorithm inspired by Earliest Deadline First (EDF) scheduling.
 
 The planner takes your tasks, sorts them by deadline, priority, and estimated duration, then distributes them across study days — ensuring the most critical work is always done first.
-✨ Features
-Feature	Description
-➕ Add Tasks	Create tasks with title, deadline, priority, and study time
-📅 Smart Scheduling	Auto-generates a schedule using EDF + priority algorithm
-✅ Mark Complete	Mark tasks as done; schedule regenerates automatically
-📋 View Tasks	See all pending and completed tasks at a glance
-💾 Persistence	All data saved to plain text files; loaded on next run
-🧠 Scheduling Algorithm
+## ✨ Features
+| Feature | Description |
+| :--- | :--- |
+| **➕ Add Tasks** | Create tasks with title, deadline, priority, and study time |
+| **📅 Smart Scheduling** | Auto-generates a schedule using EDF + priority algorithm |
+| **✅ Mark Complete** | Mark tasks as done; schedule regenerates automatically |
+| **📋 View Tasks** | See all pending and completed tasks at a glance |
+| **💾 Persistence** | All data saved to plain text files; loaded on next run |
 
 The core algorithm is a Multi-Criteria Priority Scheduler:
 
@@ -31,25 +31,23 @@ The core algorithm is a Multi-Criteria Priority Scheduler:
 
         Tasks are never placed after their deadline.
 
-🏗️ Architecture
-Plaintext
+## 🏗️ Project Architecture
+The project follows a **Layered Architecture** to separate data, logic, and user interface.
 
+```text
 smart-study-planner/
-│
-├── src/main/java/com/studyplanner/
-│   ├── Main.java                 ← Entry point
-│   ├── model/                    ← Data containers
-│   │   ├── Task.java             ← Implements Comparable
-│   │   └── Priority.java         ← Type-safe enum
-│   ├── service/                  ← Business logic
-│   │   └── SchedulerService.java ← The Algorithm
-│   ├── repository/               ← Data Storage
-│   │   └── FileHandler.java      ← Text file I/O
-│   └── util/                     ← Helpers
-│       └── DateUtils.java        ← Formatting
-│
+├── src/
+│   └── main/
+│       └── java/
+│           └── com/
+│               └── studyplanner/
+│                   ├── Main.java           <-- Entry Point
+│                   ├── model/             <-- Data Classes (Task.java)
+│                   ├── repository/        <-- File Storage (FileHandler.java)
+│                   ├── service/           <-- Logic (SchedulerService.java)
+│                   └── util/              <-- Helpers (DateUtils.java)
 ├── data/
-│   └── tasks.txt                 ← Persisted tasks
+│   └── tasks.txt                          <-- Database (Flat File)
 └── README.md
 
 🛠️ Tech Stack
@@ -86,17 +84,17 @@ Running the App
         Press the Run button above the main method.
 
 🖥️ Example Usage
-Plaintext
-
-  ╔════════════════════════════════════════╗
-  ║        📚  SMART STUDY PLANNER         ║
-  ╚════════════════════════════════════════╝
+╔════════════════════════════════════════╗
+║        📚  SMART STUDY PLANNER         ║
+╚════════════════════════════════════════╝
 
   1. Add Task
   2. Generate Smart Schedule
   3. View All Tasks
   4. Mark Task as Complete
   5. Exit
+
+  Selection: _
 
 👨‍💻 Author
 
