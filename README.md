@@ -1,4 +1,4 @@
-📚 Smart Study Planner
+## 📚 Smart Study Planner
 
 A Java-based console application that helps students manage study tasks intelligently using a multi-criteria priority scheduling algorithm.
 📖 Project Overview
@@ -50,7 +50,7 @@ smart-study-planner/
 │   └── tasks.txt                          <-- Database (Flat File)
 └── README.md
 
-🛠️ Tech Stack
+## 🛠️ Tech Stack
 
     Language: Java 25 (Standard Library)
 
@@ -60,7 +60,7 @@ smart-study-planner/
 
     File I/O: BufferedReader, PrintWriter
 
-⚙️ Setup & Running
+## ⚙️ Setup & Running
 Prerequisites
 
     Java 17 or higher installed
@@ -83,7 +83,7 @@ Running the App
 
         Press the Run button above the main method.
 
-🖥️ Example Usage
+## 🖥️ Example Usage
 ╔════════════════════════════════════════╗
 ║        📚  SMART STUDY PLANNER         ║
 ╚════════════════════════════════════════╝
@@ -96,7 +96,7 @@ Running the App
 
   Selection: _
 
-👨‍💻 Author
+## 👨‍💻 Author
 
 Sourima Dutta
 
