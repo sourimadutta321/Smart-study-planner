@@ -1,11 +1,6 @@
-## 📚 Smart Study Planner
-
+# 📚 Smart Study Planner
 A Java-based console application that helps students manage study tasks intelligently using a multi-criteria priority scheduling algorithm.
-📖 Project Overview
 
-Students often struggle with managing multiple subjects, overlapping deadlines, and varying task priorities. The Smart Study Planner solves this by automatically generating a day-wise study schedule using a priority scheduling algorithm inspired by Earliest Deadline First (EDF) scheduling.
-
-The planner takes your tasks, sorts them by deadline, priority, and estimated duration, then distributes them across study days — ensuring the most critical work is always done first.
 ## ✨ Features
 | Feature | Description |
 | :--- | :--- |
@@ -15,50 +10,28 @@ The planner takes your tasks, sorts them by deadline, priority, and estimated du
 | **📋 View Tasks** | See all pending and completed tasks at a glance |
 | **💾 Persistence** | All data saved to plain text files; loaded on next run |
 
-The core algorithm is a Multi-Criteria Priority Scheduler:
-
-    Priority Queue (min-heap) sorted by:
-
-        Deadline → Earlier deadline = higher urgency (EDF)
-
-        Priority Level → HIGH > MEDIUM > LOW
-
-        Estimated Hours → Shorter tasks first (Tie-break)
-
-    Distribution:
-
-        First-Fit bin packing into daily study slots.
-
-        Tasks are never placed after their deadline.
-
-## 🏗️ Project Architecture
-The project follows a **Layered Architecture** to separate data, logic, and user interface.
-
+## 🏗️ Architecture
 ```text
 smart-study-planner/
-├── src/
-│   └── main/
-│       └── java/
-│           └── com/
-│               └── studyplanner/
-│                   ├── Main.java           <-- Entry Point
-│                   ├── model/             <-- Data Classes (Task.java)
-│                   ├── repository/        <-- File Storage (FileHandler.java)
-│                   ├── service/           <-- Logic (SchedulerService.java)
-│                   └── util/              <-- Helpers (DateUtils.java)
+├── src/main/java/com/studyplanner/
+│   ├── Main.java                 <-- Entry point
+│   ├── model/                    <-- Task.java, Priority.java
+│   ├── service/                  <-- SchedulerService.java
+│   ├── repository/               <-- FileHandler.java
+│   └── util/                     <-- DateUtils.java
 ├── data/
-│   └── tasks.txt                          <-- Database (Flat File)
+│   └── tasks.txt                 <-- Database File
 └── README.md
+```
 
 ## 🛠️ Tech Stack
+Language: Java 25 (Standard Library)
 
-    Language: Java 25 (Standard Library)
+Data Structures: PriorityQueue, ArrayList, List
 
-    Data Structures: PriorityQueue, ArrayList, List
+Date Handling: java.time.LocalDate
 
-    Date Handling: java.time.LocalDate
-
-    File I/O: BufferedReader, PrintWriter
+File I/O: BufferedReader, PrintWriter
 
 ## ⚙️ Setup & Running
 Prerequisites
@@ -69,19 +42,11 @@ Prerequisites
 
 Running the App
 
-    Clone the repository
-    Bash
+    Open the project in VS Code.
 
-    git clone https://github.com/sourimadutta321/Smart-study-planner.git
-    cd Smart-study-planner
+    Navigate to src/main/java/com/studyplanner/Main.java.
 
-    Run in VS Code
-
-        Open the folder in VS Code.
-
-        Open Main.java.
-
-        Press the Run button above the main method.
+    Click the Run button above the main method
 
 ## 🖥️ Example Usage
 ╔════════════════════════════════════════╗
@@ -94,10 +59,5 @@ Running the App
   4. Mark Task as Complete
   5. Exit
 
-  Selection: _
-
 ## 👨‍💻 Author
-
-Sourima Dutta
-
-    GitHub: @sourimadutta321
+Sourima Dutta GitHub: @sourimadutta321
